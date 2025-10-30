@@ -3,16 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Home hub linking to chatbot pages.">
-  <title>Chatbots Home</title>
+  <meta name="description" content="BoldDesk chat widget page.">
+  <title>BoldDesk Chat</title>
   <style>
     :root { color-scheme: light dark; }
     html, body { height: 100%; margin: 0; }
     body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; }
     main { text-align: center; padding: 2rem; }
-    ul { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: .75rem; }
-    li { }
-    .link { display: inline-block; padding: .75rem 1rem; border: 1px solid currentColor; border-radius: .5rem; text-decoration: none; }
     h1 { font-size: 2rem; margin: 0 0 .5rem; }
     p { margin: 0; opacity: .8; }
     .footer { position: fixed; inset: auto 0 1rem; text-align: center; font-size: .875rem; opacity: .7; }
@@ -21,13 +18,15 @@
 </head>
 <body>
   <main>
-    <h1>Chatbots</h1>
-    <p>Select a bot:</p>
-    <ul>
-      <li><a class="link" href="bolddesk/index.html">BoldDesk</a></li>
-      <li><a class="link" href="tidio/index.html">Tidio</a></li>
-    </ul>
+    <h1>BoldDesk Support</h1>
+    <p>The BoldDesk chat widget will appear in the corner when loaded.</p>
   </main>
-  <div class="footer">Home</div>
+  <div class="footer"><a href="../index.html">← Back home</a></div>
+
+  <!-- BoldDesk Chat Widget -->
+  <script src="https://swept.bolddesk.com/chatwidget-api/widget/v1/cb6e6258-43c7-4608-871c-3457e813fecc" defer async></script>
+  <noscript>
+    Please enable JavaScript to use the chat widget.
+  </noscript>
 </body>
 </html>
