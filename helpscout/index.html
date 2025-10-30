@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BoldDesk chat widget page.">
+  <title>BoldDesk Chat</title>
+  <style>
+    :root { color-scheme: light dark; }
+    html, body { height: 100%; margin: 0; }
+    body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; }
+    main { text-align: center; padding: 2rem; }
+    h1 { font-size: 2rem; margin: 0 0 .5rem; }
+    p { margin: 0; opacity: .8; }
+    .footer { position: fixed; inset: auto 0 1rem; text-align: center; font-size: .875rem; opacity: .7; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Help Scout Support</h1>
+    <p>The Help Scout chat widget will appear in the corner when loaded.</p>
+  </main>
+  <div class="footer"><a href="../index.html">← Back home</a></div>
+
+  <!-- Help Scout Chat Widget -->
+  <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+  <script type="text/javascript">window.Beacon('init', 'ecab5572-73e5-4626-989f-21ddcf7fb78f')</script>
+  <noscript>
+    Please enable JavaScript to use the chat widget.
+  </noscript>
+</body>
+</html>
