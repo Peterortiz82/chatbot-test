@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BoldDesk chat widget page.">
+  <title>BoldDesk Chat</title>
+  <style>
+    :root { color-scheme: light dark; }
+    html, body { height: 100%; margin: 0; }
+    body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; }
+    main { text-align: center; padding: 2rem; }
+    h1 { font-size: 2rem; margin: 0 0 .5rem; }
+    p { margin: 0; opacity: .8; }
+    .footer { position: fixed; inset: auto 0 1rem; text-align: center; font-size: .875rem; opacity: .7; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Intercom Support</h1>
+    <p>The Intercom chat widget will appear in the corner when loaded.</p>
+  </main>
+  <div class="footer"><a href="../index.html">← Back home</a></div>
+
+  <!-- Intercom Chat Widget -->
+  <script>
+    window.intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "ngvaw6sy",
+      user_id: user.id, // IMPORTANT: Replace "user.id" with the variable you use to capture the user's ID
+      name: user.name, // IMPORTANT: Replace "user.name" with the variable you use to capture the user's name
+      email: user.email, // IMPORTANT: Replace "user.email" with the variable you use to capture the user's email address
+      created_at: user.createdAt, // IMPORTANT: Replace "user.createdAt" with the variable you use to capture the user's sign-up date
+    };
+  </script>
+
+
+  <script>
+    // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/ngvaw6sy'
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ngvaw6sy';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+  </script>
+  <noscript>
+    Please enable JavaScript to use the chat widget.
+  </noscript>
+</body>
+</html>
